@@ -7,9 +7,11 @@ export default function Recipe() {
     const param = useParams()
     
     const {data:recipe,isPending,error} = useFetch(`http://localhost:8001/recipes/${param.id}`)
+    
+    console.log("The id of the recipe which you chose is "+param.id)
 
     return (
-        <div class="recipe">
+        <div className="recipe">
             {error && <div className="error">{error}</div>}
             {isPending && <h2>Loading.....</h2>}
             {recipe && <div>
