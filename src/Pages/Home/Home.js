@@ -4,7 +4,7 @@ import RecipeList from '../../Components/RecipeList'
 
 export default function Home() {
 
-    const {data,isPending,error} = useFetch("http://localhost:8000/recipes")
+    const {data,isPending,error} = useFetch("http://localhost:8001/recipes")
 
     return (
         <div className="home">

@@ -12,7 +12,7 @@ export default function RecipeList({recipes}) {
                         <div>
                             {recipe.method.substring(0,100)}...
                         </div>
-                        <Link to={`/recipe/${recipe.id}`}>Cook this</Link>
+                        <Link to={`/recipe/${recipe.id}`} className="cook-this">Cook this</Link>
                     </div>
                 )
             })}
