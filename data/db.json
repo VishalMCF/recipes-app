@@ -58,46 +58,30 @@
       "id": "x9SgLOl"
     },
     {
-      "title": "banana cake",
-      "ingredients": [
-        "banana",
-        "butter",
-        "flour",
-        "sugar",
-        "cream",
-        "eggs"
-      ],
-      "method": "preheat the oven to 450 degree fahrenhiet. Chop the vegetables and spread olive and salt and bake it for 35 minutes",
-      "cookingTime": "60 minutes",
-      "id": "aJkc-Hq"
+      "title": "halwa",
+      "ingredients": [],
+      "method": "bla bla bla",
+      "cookingTime": "40 minutes",
+      "id": "Yz3GqAy"
     },
     {
-      "title": "banana cake",
-      "ingredients": [
-        "banana",
-        "butter",
-        "flour",
-        "sugar",
-        "cream",
-        "eggs"
-      ],
-      "method": "preheat the oven to 450 degree fahrenhiet. Chop the vegetables and spread olive and salt and bake it for 35 minutes",
-      "cookingTime": "60 minutes",
-      "id": "RUfiRc4"
+      "title": "halwa",
+      "ingredients": [],
+      "method": "bla bla bla",
+      "cookingTime": "40 minutes",
+      "id": "Qbrmpk5"
     },
     {
-      "title": "banana cake",
+      "title": "moong dal halwa",
       "ingredients": [
-        "banana",
-        "butter",
-        "flour",
+        "ghee",
+        "moong dal",
         "sugar",
-        "cream",
-        "eggs"
+        "khoya"
       ],
-      "method": "preheat the oven to 450 degree fahrenhiet. Chop the vegetables and spread olive and salt and bake it for 35 minutes",
-      "cookingTime": "60 minutes",
-      "id": "PvWY0Gt"
+      "method": "bla bla bla",
+      "cookingTime": "90 minutes",
+      "id": "w_7qbJI"
     }
   ]
 }

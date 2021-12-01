@@ -7,13 +7,13 @@ export default function useFetch(url,method="GET") {
   const [options,setOptions] =  useState(null);
 
 
-  const postData = (postData) =>{
+  const postData = (postdata) =>{
     setOptions({
       method: "POST",
       headers:{
         "Content-type": "application/json"
       },
-      body:JSON.stringify(postData)
+      body:JSON.stringify(postdata)
     })
   }
 
