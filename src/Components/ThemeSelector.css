@@ -1,7 +1,6 @@
 .theme-selector{
     display: flex;
     justify-content: space-evenly;
-    
     align-items: center;
     margin: 4px 0 0 auto;
     max-width: 140px;
@@ -17,4 +16,14 @@
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 50%;
+}
+
+.mode-toggle{
+    margin-right: auto;
+}
+
+.mode-toggle img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }

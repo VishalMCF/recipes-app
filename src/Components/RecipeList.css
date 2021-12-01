@@ -54,3 +54,13 @@
     background-color: #0f0f0f;
     color: #fff;
 }
+
+.card.dark{
+    color: #fff;
+    background: #0f0f0f;
+}
+
+.cook-this.dark :hover{
+    background-color: #ffffff;
+    color: #0f0f0f;
+}
