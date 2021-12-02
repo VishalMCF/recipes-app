@@ -1,12 +1,32 @@
 import './Recipe.css'
 import { useParams} from 'react-router-dom'
-import useFetch from '../../Hooks/useFetch'
+
+import {project_firestore} from '../../Firebase/config'
+import { useEffect, useState } from 'react'
 
 export default function Recipe() { 
 
     const param = useParams()
     
-    const {data:recipe,isPending,error} = useFetch(`http://localhost:8001/recipes/${param.id}`)
+    const [recipe, setRecipe] = useState(null)
+    const [isPending,setIsPending] = useState(false)
+    const [error,setError] = useState(null)
+
+    useEffect(()=>{
+        setIsPending(true)
+        project_firestore.collection('recipes').doc(param.id).get().then((doc)=>{
+            if(doc.exists){
+                setIsPending(false)
+                setRecipe(doc.data())
+            }else{
+                setIsPending(false)
+                setError('Could not find that recipe')
+            }
+        }).catch((err)=>{
+            setError(err.message)
+            setIsPending(false)
+        })
+    },[param.id])
     
     console.log("The id of the recipe which you chose is "+param.id)
 
